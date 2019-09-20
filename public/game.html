@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Open World FPS</title>
+	<style>
+		html, body {
+			overflow: hidden;
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		#canvas {
+			width: 100%;
+			height: 100%;
+			touch-action: none;
+		}
+		#loader {
+			width: 100%;
+		}
+		img {
+			width: 60%;
+			display: block;
+			margin: auto;
+		}
+	</style>
+	<script src="js/babylonPreview.js"></script>
+	<script src="js/babylonLoaders.js"></script>
+	<script src="js/pepJquery.js"></script>
+	<script src="js/sceneInspector.js"></script>
+	<script src="js/babylonGUI.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="loader"><img src="loading.svg" /></div>
+	</div>
+	<canvas id="canvas" touch-action="none"></canvas>
+	
+	<script src="main.js"></script>
+</body>
+</html>
