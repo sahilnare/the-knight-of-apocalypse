@@ -98,8 +98,8 @@ window.onload = (event) => {
 
 	let GAMEOVER = false;
 	let dispose = false;
-
-
+	
+	
 	const createScene = function () {
 		
 	    // Create scene
