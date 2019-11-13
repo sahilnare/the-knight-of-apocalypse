@@ -2,4 +2,4 @@
  
 ## We made this game using Babylon.js
 
-Link to play: https://nikhilkrgautam.github.io/  or  http://theknightofapocalypse.herokuapp.com/
+Link to play: http://theknightofapocalypse.herokuapp.com/
