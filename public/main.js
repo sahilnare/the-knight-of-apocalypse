@@ -48,7 +48,6 @@ window.onload = (event) => {
 	            array.push(p, i*3);
 	            map.push(array);
 	        }
-
 	    }
 	    var randomNumber = function (min, max) {
 	        if (min == max) {
@@ -98,7 +97,6 @@ window.onload = (event) => {
 
 	let GAMEOVER = false;
 	let dispose = false;
-	
 	
 	const createScene = function () {
 		
