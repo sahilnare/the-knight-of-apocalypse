@@ -1,3 +1,4 @@
+
 window.onload = (event) => {
 	var parentElement = document.getElementById("container");
 	var childElement = document.getElementById("loader");
@@ -5,6 +6,7 @@ window.onload = (event) => {
 	const canvas = document.getElementById("canvas"); // Get the canvas element 
 	const engine = new BABYLON.Engine(canvas, true); // Generate the BABYLON 3D engine
 
+	
 	QuickTreeGenerator = function(sizeBranch, sizeTrunk, radius, trunkMaterial, leafMaterial, scene) {
 
 	    var treeparent = BABYLON.Mesh.CreatePlane("treeparent", scene);
@@ -49,6 +51,7 @@ window.onload = (event) => {
 	            map.push(array);
 	        }
 	    }
+		
 	    var randomNumber = function (min, max) {
 	        if (min == max) {
 	            return (min);
@@ -72,6 +75,7 @@ window.onload = (event) => {
 	    });
 
 	    leaves.setVerticesData(BABYLON.VertexBuffer.PositionKind, positions);
+		
 	    var normals = [];
 	    BABYLON.VertexData.ComputeNormals(positions, indices, normals);
 	    leaves.setVerticesData(BABYLON.VertexBuffer.NormalKind, normals);
@@ -92,7 +96,6 @@ window.onload = (event) => {
 	    var mTree = BABYLON.Mesh.MergeMeshes([treeparent, trunk, leaves], true, true, undefined, false, true);
 
 	    return mTree;
-
 	};
 
 	let GAMEOVER = false;
