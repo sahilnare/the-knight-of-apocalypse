@@ -7,6 +7,7 @@ window.onload = (event) => {
 	const engine = new BABYLON.Engine(canvas, true); // Generate the BABYLON 3D engine
 
 	
+	
 	QuickTreeGenerator = function(sizeBranch, sizeTrunk, radius, trunkMaterial, leafMaterial, scene) {
 
 	    var treeparent = BABYLON.Mesh.CreatePlane("treeparent", scene);
@@ -45,6 +46,7 @@ window.onload = (event) => {
 	                found = true;
 	            }
 	        }
+		    
 	        if (!found) {
 	            var array = [];
 	            array.push(p, i*3);
