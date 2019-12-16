@@ -5,7 +5,6 @@ window.onload = (event) => {
 	parentElement.removeChild(childElement);
 	const canvas = document.getElementById("canvas"); // Get the canvas element 
 	const engine = new BABYLON.Engine(canvas, true); // Generate the BABYLON 3D engine
-
 	
 	
 	QuickTreeGenerator = function(sizeBranch, sizeTrunk, radius, trunkMaterial, leafMaterial, scene) {
@@ -82,14 +81,12 @@ window.onload = (event) => {
 	    BABYLON.VertexData.ComputeNormals(positions, indices, normals);
 	    leaves.setVerticesData(BABYLON.VertexBuffer.NormalKind, normals);
 	    leaves.convertToFlatShadedMesh();
-	    
 	    leaves.material = leafMaterial;
 	    leaves.position.y = sizeTrunk+sizeBranch/2-2;
 
 	    var trunk = BABYLON.Mesh.CreateCylinder("trunk", sizeTrunk, radius-2<1?1:radius-2, radius, 10, 2, scene );
 	    
 	    trunk.position.y = (sizeBranch/2+2)-sizeTrunk/2;
-
 	    trunk.material = trunkMaterial;
 	    trunk.convertToFlatShadedMesh();
 	    
@@ -148,7 +145,6 @@ window.onload = (event) => {
 	    light2.diffuse = new BABYLON.Color3(1, 1, 1);
 	    light2.specular = new BABYLON.Color3(0.1, 0.1, 0.1);
 	    light2.intensity = 0.05;
-
 	    
 
 	    // Skybox
