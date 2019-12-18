@@ -30,6 +30,7 @@ window.onload = (event) => {
 	    var max = [];
 
 	    for (var i=0; i<numberOfPoints; i++) {
+		    
 	        var p = new v3(positions[i*3], positions[i*3+1], positions[i*3+2]);
 
 	        if (p.y >= sizeBranch/2) {
@@ -95,6 +96,7 @@ window.onload = (event) => {
 	    var mTree = BABYLON.Mesh.MergeMeshes([treeparent, trunk, leaves], true, true, undefined, false, true);
 
 	    return mTree;
+		
 	};
 
 	let GAMEOVER = false;
@@ -122,7 +124,6 @@ window.onload = (event) => {
 		//GUI
 	    const advancedTexture = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("myUI");
 
-
 	    // Camera
 	    const camera = new BABYLON.UniversalCamera("UniversalCamera", new BABYLON.Vector3(220, 4, 270), scene);
 	    camera.setTarget(new BABYLON.Vector3(220, 4, 100));
@@ -146,7 +147,6 @@ window.onload = (event) => {
 	    light2.specular = new BABYLON.Color3(0.1, 0.1, 0.1);
 	    light2.intensity = 0.05;
 	    
-
 	    // Skybox
 	    const skybox = BABYLON.MeshBuilder.CreateBox("skyBox", {size:1000.0}, scene);
 		const skyboxMaterial = new BABYLON.StandardMaterial("skyBox", scene);
@@ -157,7 +157,6 @@ window.onload = (event) => {
 		skyboxMaterial.specularColor = new BABYLON.Color3(0, 0, 0);
 		skybox.material = skyboxMaterial;
 		// skybox.renderingGroupId = 0;
-
 
 		const scope = new BABYLON.GUI.Ellipse();
 	    scope.width = "20px"
