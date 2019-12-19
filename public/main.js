@@ -1,5 +1,6 @@
 
 window.onload = (event) => {
+	
 	var parentElement = document.getElementById("container");
 	var childElement = document.getElementById("loader");
 	parentElement.removeChild(childElement);
@@ -99,6 +100,7 @@ window.onload = (event) => {
 		
 	};
 
+	
 	let GAMEOVER = false;
 	let dispose = false;
 	
@@ -158,23 +160,23 @@ window.onload = (event) => {
 		skybox.material = skyboxMaterial;
 		// skybox.renderingGroupId = 0;
 
-		const scope = new BABYLON.GUI.Ellipse();
+	    const scope = new BABYLON.GUI.Ellipse();
 	    scope.width = "20px"
 	    scope.height = "20px";
 	    scope.color = "White";
 	    scope.thickness = 2;
 	    scope.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_CENTER;
 	    scope.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_CENTER;
-		advancedTexture.addControl(scope);
+	    advancedTexture.addControl(scope);
 
-		const scope2 = new BABYLON.GUI.Ellipse();
+	    const scope2 = new BABYLON.GUI.Ellipse();
 	    scope2.width = "3px"
 	    scope2.height = "3px";
 	    scope2.color = "White";
 	    scope2.thickness = 2;
 	    scope2.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_CENTER;
 	    scope2.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_CENTER;
-		advancedTexture.addControl(scope2);
+	    advancedTexture.addControl(scope2);
 
 		// const text1 = new BABYLON.GUI.TextBlock();
 		// text1.text = "Wraiths Left: " + ghostCount;
