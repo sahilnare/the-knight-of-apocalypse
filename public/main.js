@@ -76,6 +76,7 @@ window.onload = (event) => {
 	            positions[i+2] += rz;
 	        }
 	    });
+		
 
 	    leaves.setVerticesData(BABYLON.VertexBuffer.PositionKind, positions);
 		
@@ -113,11 +114,9 @@ window.onload = (event) => {
 		scene.autoClearDepthAndStencil = false;
 
 		//Important variables
-
 		let PAUSE = true;
 		let HASGUN = true;
 		let ghostCount = 10;
-
 
 		// Fog
 		scene.fogMode = BABYLON.Scene.FOGMODE_EXP;
@@ -159,6 +158,7 @@ window.onload = (event) => {
 		skyboxMaterial.specularColor = new BABYLON.Color3(0, 0, 0);
 		skybox.material = skyboxMaterial;
 		// skybox.renderingGroupId = 0;
+		
 
 	    const scope = new BABYLON.GUI.Ellipse();
 	    scope.width = "20px"
