@@ -159,7 +159,6 @@ window.onload = (event) => {
 		skybox.material = skyboxMaterial;
 		// skybox.renderingGroupId = 0;
 		
-
 	    const scope = new BABYLON.GUI.Ellipse();
 	    scope.width = "20px"
 	    scope.height = "20px";
@@ -269,7 +268,6 @@ window.onload = (event) => {
 	    		playerHealth = 0;
 	    	}
 	    }
-
 
 
 		const borderMesh = BABYLON.MeshBuilder.CreateBox("border0", {width:1, height:1, depth:1}, scene);
@@ -391,7 +389,6 @@ window.onload = (event) => {
 
 	    
 		// Trees
-
 		const trunkMaterial = new BABYLON.StandardMaterial("trunkmaterial", scene);
 		trunkMaterial.diffuseColor = new BABYLON.Color3(0.5, 0, 0);
 
