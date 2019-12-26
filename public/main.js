@@ -8,6 +8,7 @@ window.onload = (event) => {
 	const engine = new BABYLON.Engine(canvas, true); // Generate the BABYLON 3D engine
 	
 	
+	
 	QuickTreeGenerator = function(sizeBranch, sizeTrunk, radius, trunkMaterial, leafMaterial, scene) {
 
 	    var treeparent = BABYLON.Mesh.CreatePlane("treeparent", scene);
@@ -215,6 +216,7 @@ window.onload = (event) => {
 		advancedTexture.addControl(openingText);
 
 		//Map
+		
 		// let gameMap = new BABYLON.GUI.Rectangle();
 	 //    gameMap.width = "200px";
 	 //    gameMap.height = "200px";
