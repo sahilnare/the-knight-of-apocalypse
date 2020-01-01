@@ -1,5 +1,4 @@
 
-
 window.onload = (event) => {
 	
 	var parentElement = document.getElementById("container");
