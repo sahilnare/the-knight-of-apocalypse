@@ -4,6 +4,8 @@
 
 Link to play: http://theknightofapocalypse.herokuapp.com/
 
+Gameplay: https://www.youtube.com/watch?v=uC9sji5_lIg
+
 ![air view](Pictures/pic6.png)
 
 ![menu](Pictures/pic1.png)
